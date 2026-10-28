@@ -40,6 +40,6 @@ jobs:
         shell: pwsh
         run:
           gh release create "${{ github.ref_name }}" `
-            "dist/PdfEditor.exe" `
+            "dist/pdfeditor.zip" `
             --title "PdfEditor ${{ github.ref_name }}" `
             --generate-notes
