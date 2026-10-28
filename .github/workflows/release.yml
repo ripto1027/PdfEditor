@@ -31,15 +31,13 @@ jobs:
       - name: Build Updater EXE
         run: uv run pyinstaller --clean --noconfirm --onefile --name Updater src/pdfeditor/updater/main.py
 
-      - name: Create Zip
-        run: zip -r pdfeditor.zip dist/
-
       - name: Create Github Release
         env:
           GH_TOKEN: ${{ github.token }}
         shell: pwsh
         run:
           gh release create "${{ github.ref_name }}" `
-            "dist/pdfeditor.zip" `
+            "dist/PdfEditor.exe" `
+            "dist/Updater.exe" `
             --title "PdfEditor ${{ github.ref_name }}" `
             --generate-notes
