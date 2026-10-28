@@ -25,8 +25,14 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
-      - name: Build EXE
-        run: uv run pyinstaller --clean --noconfirm --onefile --name PdfEditor src/pdfeditor/main.py
+      - name: Build PdfEditor EXE
+        run: uv run pyinstaller --clean --noconfirm --onefile --name PdfEditor src/pdfeditor/main/main.py
+
+      - name: Build Updater EXE
+        run: uv run pyinstaller --clean --noconfirm --onefile --name Updater src/pdfeditor/updater/main.py
+
+      - name: Create Zip
+        run: zip -r pdfeditor.zip dist/
 
       - name: Create Github Release
         env:
