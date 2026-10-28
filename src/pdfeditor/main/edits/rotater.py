@@ -4,10 +4,10 @@ from pathlib import Path
 import sys
 from pypdf import PdfReader, PdfWriter
 
-from pdfeditor.edits.editor import Editor
-from pdfeditor.files.dir_controls import INPUT_DIR, OUTPUT_DIR, exists_output_dir, open_output_dir
-from pdfeditor.files.dir_exceptions import missing_output_dir
-from pdfeditor.utils import pause
+from pdfeditor.main.edits.editor import Editor
+from pdfeditor.main.files.dir_controls import INPUT_DIR, OUTPUT_DIR, exists_output_dir, open_output_dir
+from pdfeditor.main.files.dir_exceptions import missing_output_dir
+from pdfeditor.main.utils import pause
 
 class Rotater(Editor):
     __rotate_angle: int

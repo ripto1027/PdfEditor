@@ -1,7 +1,8 @@
 @echo off
 
 cd /d %~dp0
-uv run --locked pyinstaller --clean --noconfirm --onefile --name PdfEditor src\pdfeditor\main.py
+uv run --locked pyinstaller --clean --noconfirm --onefile --name PdfEditor src\pdfeditor\main\main.py
+uv run --locked pyinstaller --clean --noconfirm --onefile --name Updater src\pdfeditor\updater\main.py
 
 if errorLevel 1 (
     echo ÉrÉãÉhÇ…é∏îsÇµÇ‹ÇµÇΩÅB

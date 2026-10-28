@@ -2,8 +2,8 @@ import os
 
 from typing import Final
 
-from pdfeditor.files.dir_controls import INPUT_DIR, exists_input_dir
-from pdfeditor.files.dir_exceptions import missing_input_dir, missing_pdf_file
+from pdfeditor.main.files.dir_controls import INPUT_DIR, exists_input_dir
+from pdfeditor.main.files.dir_exceptions import missing_input_dir, missing_pdf_file
 
 class PdfEditList:
     __pdf_list: Final[list[str]]

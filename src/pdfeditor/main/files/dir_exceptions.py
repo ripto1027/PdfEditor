@@ -1,7 +1,7 @@
 import sys
 
-from pdfeditor.files.dir_controls import create_input_dir, create_output_dir, open_input_dir
-from pdfeditor.utils import pause
+from pdfeditor.main.files.dir_controls import create_input_dir, create_output_dir, open_input_dir
+from pdfeditor.main.utils import pause
 
 
 def missing_input_dir() -> None:

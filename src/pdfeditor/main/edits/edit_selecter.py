@@ -1,8 +1,8 @@
 import sys
 
-from pdfeditor.edits.editor import Editor
-from pdfeditor.edits.editors import Editors
-from pdfeditor.utils import pause
+from pdfeditor.main.edits.editor import Editor
+from pdfeditor.main.edits.editors import Editors
+from pdfeditor.main.utils import pause
 
 def select_editor() -> type[Editor]:
     print("inputフォルダにあるPDFファイルを編集します。")

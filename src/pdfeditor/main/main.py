@@ -1,6 +1,6 @@
-from pdfeditor.edits.edit_selecter import select_editor
-from pdfeditor.edits.editor import Editor
-from pdfeditor.files.pdf_edit_list import PdfEditList
+from pdfeditor.main.edits.edit_selecter import select_editor
+from pdfeditor.main.edits.editor import Editor
+from pdfeditor.main.files.pdf_edit_list import PdfEditList
 
 def main() -> None:
     selected_editor: type[Editor] = select_editor()

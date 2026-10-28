@@ -1,6 +1,6 @@
 from enum import Enum
-from pdfeditor.edits.editor import Editor
-from pdfeditor.edits.rotater import Rotater
+from pdfeditor.main.edits.editor import Editor
+from pdfeditor.main.edits.rotater import Rotater
 
 class Editors(Enum):
     ROTATE = (Rotater, 1, "回転")
